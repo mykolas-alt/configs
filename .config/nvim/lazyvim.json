@@ -5,8 +5,10 @@
     "lazyvim.plugins.extras.editor.aerial",
     "lazyvim.plugins.extras.editor.dial",
     "lazyvim.plugins.extras.editor.illuminate",
+    "lazyvim.plugins.extras.editor.mini-move",
     "lazyvim.plugins.extras.editor.telescope",
-    "lazyvim.plugins.extras.lang.clangd"
+    "lazyvim.plugins.extras.lang.clangd",
+    "lazyvim.plugins.extras.vscode"
   ],
   "install_version": 8,
   "news": {
