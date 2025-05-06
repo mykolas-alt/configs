@@ -1,0 +1,14 @@
+{
+    "name": "personal-snippets",
+    "contributes": {
+        "snippets": [
+            {
+                "language": [
+                    "python",
+                    "tex"
+                ],
+                "path": "./math.json"
+            }
+        ]
+    }
+}

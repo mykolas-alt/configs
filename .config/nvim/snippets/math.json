@@ -1,0 +1,467 @@
+{
+    "Alpha (Lowercase)": {
+        "prefix": "alpha",
+        "body": "α",
+        "description": "Greek letter alpha (lowercase)"
+    },
+    "Beta (Lowercase)": {
+        "prefix": "beta",
+        "body": "β",
+        "description": "Greek letter beta (lowercase)"
+    },
+    "Gamma (Lowercase)": {
+        "prefix": "gamma",
+        "body": "γ",
+        "description": "Greek letter gamma (lowercase)"
+    },
+    "Delta (Lowercase)": {
+        "prefix": "delta",
+        "body": "δ",
+        "description": "Greek letter delta (lowercase)"
+    },
+    "Epsilon (Lowercase)": {
+        "prefix": "epsilon",
+        "body": "ε",
+        "description": "Greek letter epsilon (lowercase)"
+    },
+    "Zeta (Lowercase)": {
+        "prefix": "zeta",
+        "body": "ζ",
+        "description": "Greek letter zeta (lowercase)"
+    },
+    "Eta (Lowercase)": {
+        "prefix": "eta",
+        "body": "η",
+        "description": "Greek letter eta (lowercase)"
+    },
+    "Theta (Lowercase)": {
+        "prefix": "theta",
+        "body": "θ",
+        "description": "Greek letter theta (lowercase)"
+    },
+    "Iota (Lowercase)": {
+        "prefix": "iota",
+        "body": "ι",
+        "description": "Greek letter iota (lowercase)"
+    },
+    "Kappa (Lowercase)": {
+        "prefix": "kappa",
+        "body": "κ",
+        "description": "Greek letter kappa (lowercase)"
+    },
+    "Lambda (Lowercase)": {
+        "prefix": "lambda",
+        "body": "λ",
+        "description": "Greek letter lambda (lowercase)"
+    },
+    "Mu (Lowercase)": {
+        "prefix": "mu",
+        "body": "μ",
+        "description": "Greek letter mu (lowercase)"
+    },
+    "Nu (Lowercase)": {
+        "prefix": "nu",
+        "body": "ν",
+        "description": "Greek letter nu (lowercase)"
+    },
+    "Xi (Lowercase)": {
+        "prefix": "xi",
+        "body": "ξ",
+        "description": "Greek letter xi (lowercase)"
+    },
+    "Omicron (Lowercase)": {
+        "prefix": "omicron",
+        "body": "ο",
+        "description": "Greek letter omicron (lowercase)"
+    },
+    "Pi (Lowercase)": {
+        "prefix": "pi",
+        "body": "π",
+        "description": "Greek letter pi (lowercase)"
+    },
+    "Rho (Lowercase)": {
+        "prefix": "rho",
+        "body": "ρ",
+        "description": "Greek letter rho (lowercase)"
+    },
+    "Sigma (Lowercase)": {
+        "prefix": "sigma",
+        "body": "σ",
+        "description": "Greek letter sigma (lowercase)"
+    },
+    "Tau (Lowercase)": {
+        "prefix": "tau",
+        "body": "τ",
+        "description": "Greek letter tau (lowercase)"
+    },
+    "Upsilon (Lowercase)": {
+        "prefix": "upsilon",
+        "body": "υ",
+        "description": "Greek letter upsilon (lowercase)"
+    },
+    "Phi (Lowercase)": {
+        "prefix": "phi",
+        "body": "φ",
+        "description": "Greek letter phi (lowercase)"
+    },
+    "Chi (Lowercase)": {
+        "prefix": "chi",
+        "body": "χ",
+        "description": "Greek letter chi (lowercase)"
+    },
+    "Psi (Lowercase)": {
+        "prefix": "psi",
+        "body": "ψ",
+        "description": "Greek letter psi (lowercase)"
+    },
+    "Omega (Lowercase)": {
+        "prefix": "omega",
+        "body": "ω",
+        "description": "Greek letter omega (lowercase)"
+    },
+    "Alpha (Uppercase)": {
+        "prefix": "Alpha",
+        "body": "Α",
+        "description": "Greek letter alpha (uppercase)"
+    },
+    "Beta (Uppercase)": {
+        "prefix": "Beta",
+        "body": "Β",
+        "description": "Greek letter beta (uppercase)"
+    },
+    "Gamma (Uppercase)": {
+        "prefix": "Gamma",
+        "body": "Γ",
+        "description": "Greek letter gamma (uppercase)"
+    },
+    "Delta (Uppercase)": {
+        "prefix": "Delta",
+        "body": "Δ",
+        "description": "Greek letter delta (uppercase)"
+    },
+    "Epsilon (Uppercase)": {
+        "prefix": "Epsilon",
+        "body": "Ε",
+        "description": "Greek letter epsilon (uppercase)"
+    },
+    "Zeta (Uppercase)": {
+        "prefix": "Zeta",
+        "body": "Ζ",
+        "description": "Greek letter zeta (uppercase)"
+    },
+    "Eta (Uppercase)": {
+        "prefix": "Eta",
+        "body": "Η",
+        "description": "Greek letter eta (uppercase)"
+    },
+    "Theta (Uppercase)": {
+        "prefix": "Theta",
+        "body": "Θ",
+        "description": "Greek letter theta (uppercase)"
+    },
+    "Iota (Uppercase)": {
+        "prefix": "Iota",
+        "body": "Ι",
+        "description": "Greek letter iota (uppercase)"
+    },
+    "Kappa (Uppercase)": {
+        "prefix": "Kappa",
+        "body": "Κ",
+        "description": "Greek letter kappa (uppercase)"
+    },
+    "Lambda (Uppercase)": {
+        "prefix": "Lambda",
+        "body": "Λ",
+        "description": "Greek letter lambda (uppercase)"
+    },
+    "Mu (Uppercase)": {
+        "prefix": "Mu",
+        "body": "Μ",
+        "description": "Greek letter mu (uppercase)"
+    },
+    "Nu (Uppercase)": {
+        "prefix": "Nu",
+        "body": "Ν",
+        "description": "Greek letter nu (uppercase)"
+    },
+    "Xi (Uppercase)": {
+        "prefix": "Xi",
+        "body": "Ξ",
+        "description": "Greek letter xi (uppercase)"
+    },
+    "Omicron (Uppercase)": {
+        "prefix": "Omicron",
+        "body": "Ο",
+        "description": "Greek letter omicron (uppercase)"
+    },
+    "Pi (Uppercase)": {
+        "prefix": "Pi",
+        "body": "Π",
+        "description": "Greek letter pi (uppercase)"
+    },
+    "Rho (Uppercase)": {
+        "prefix": "Rho",
+        "body": "Ρ",
+        "description": "Greek letter rho (uppercase)"
+    },
+    "Sigma (Uppercase)": {
+        "prefix": "Sigma",
+        "body": "Σ",
+        "description": "Greek letter sigma (uppercase)"
+    },
+    "Tau (Uppercase)": {
+        "prefix": "Tau",
+        "body": "Τ",
+        "description": "Greek letter tau (uppercase)"
+    },
+    "Upsilon (Uppercase)": {
+        "prefix": "Upsilon",
+        "body": "Υ",
+        "description": "Greek letter upsilon (uppercase)"
+    },
+    "Phi (Uppercase)": {
+        "prefix": "Phi",
+        "body": "Φ",
+        "description": "Greek letter phi (uppercase)"
+    },
+    "Chi (Uppercase)": {
+        "prefix": "Chi",
+        "body": "Χ",
+        "description": "Greek letter chi (uppercase)"
+    },
+    "Psi (Uppercase)": {
+        "prefix": "Psi",
+        "body": "Ψ",
+        "description": "Greek letter psi (uppercase)"
+    },
+    "Omega (Uppercase)": {
+        "prefix": "Omega",
+        "body": "Ω",
+        "description": "Greek letter omega (uppercase)"
+    },
+    "nabla": {
+        "prefix": "nabla",
+        "body": "∇",
+        "description": "nabla symbol"
+    },
+    "partial derivative": {
+        "prefix": "part",
+        "body": "∂",
+        "description": "partial derivative symbol"
+    },
+    "integral": {
+        "prefix": "int",
+        "body": "∫",
+        "description": "integral symbol"
+    },
+    "double integral": {
+        "prefix": "iint",
+        "body": "∬",
+        "description": "double integral symbol"
+    },
+    "triple integral": {
+        "prefix": "iiint",
+        "body": "∭",
+        "description": "triple integral symbol"
+    },
+    "contour integral": {
+        "prefix": "oint",
+        "body": "∮",
+        "description": "contour integral symbol"
+    },
+    "summation": {
+        "prefix": "sum",
+        "body": "∑",
+        "description": "summation symbol"
+    },
+    "product": {
+        "prefix": "prod",
+        "body": "∏",
+        "description": "product symbol"
+    },
+    "square root": {
+        "prefix": "sqrt",
+        "body": "√",
+        "description": "square root symbol"
+    },
+    "infinity": {
+        "prefix": "infty",
+        "body": "∞",
+        "description": "infinity symbol"
+    },
+    "equals": {
+        "prefix": "==",
+        "body": "=",
+        "description": "equals sign"
+    },
+    "not equal to": {
+        "prefix": "!=",
+        "body": "≠",
+        "description": "not equal to"
+    },
+    "approximately equal to": {
+        "prefix": "~~",
+        "body": "≈",
+        "description": "approximately equal to"
+    },
+    "less than or equal to": {
+        "prefix": "<=",
+        "body": "≤",
+        "description": "less than or equal to"
+    },
+    "greater than or equal to": {
+        "prefix": ">=",
+        "body": "≥",
+        "description": "greater than or equal to"
+    },
+    "much less than": {
+        "prefix": "<<",
+        "body": "≪",
+        "description": "much less than"
+    },
+    "much greater than": {
+        "prefix": ">>",
+        "body": "≫",
+        "description": "much greater than"
+    },
+    "element of": {
+        "prefix": "in",
+        "body": "∈",
+        "description": "element of"
+    },
+    "not an element of": {
+        "prefix": "!in",
+        "body": "∉",
+        "description": "not an element of"
+    },
+    "subset of": {
+        "prefix": "subset",
+        "body": "⊂",
+        "description": "subset of"
+    },
+    "subset of or equal to": {
+        "prefix": "subseteq",
+        "body": "⊆",
+        "description": "subset of or equal to"
+    },
+    "superset of": {
+        "prefix": "supset",
+        "body": "⊃",
+        "description": "superset of"
+    },
+    "superset of or equal to": {
+        "prefix": "supseteq",
+        "body": "⊇",
+        "description": "superset of or equal to"
+    },
+    "empty set": {
+        "prefix": "emptyset",
+        "body": "∅",
+        "description": "empty set"
+    },
+    "intersection": {
+        "prefix": "cap",
+        "body": "∩",
+        "description": "intersection"
+    },
+    "union": {
+        "prefix": "cup",
+        "body": "∪",
+        "description": "union"
+    },
+    "for all": {
+        "prefix": "forall",
+        "body": "∀",
+        "description": "for all"
+    },
+    "there exists": {
+        "prefix": "exists",
+        "body": "∃",
+        "description": "there exists"
+    },
+    "therefore": {
+        "prefix": "therefore",
+        "body": "∴",
+        "description": "therefore"
+    },
+    "because": {
+        "prefix": "because",
+        "body": "∵",
+        "description": "because"
+    },
+    "angle": {
+        "prefix": "angle",
+        "body": "∠",
+        "description": "angle symbol"
+    },
+    "perpendicular": {
+        "prefix": "perp",
+        "body": "⊥",
+        "description": "perpendicular symbol"
+    },
+    "parallel": {
+        "prefix": "para",
+        "body": "∥",
+        "description": "parallel symbol"
+    },
+    "dot product": {
+        "prefix": "dot",
+        "body": "⋅",
+        "description": "dot product"
+    },
+    "cross product": {
+        "prefix": "cross",
+        "body": "×",
+        "description": "cross product"
+    },
+    "plus minus": {
+        "prefix": "+-",
+        "body": "±",
+        "description": "plus minus sign"
+    },
+    "minus plus": {
+        "prefix": "-+",
+        "body": "∓",
+        "description": "minus plus sign"
+    },
+    "multiplication sign": {
+        "prefix": "**",
+        "body": "×",
+        "description": "multiplication sign"
+    },
+    "division sign": {
+        "prefix": "//",
+        "body": "÷",
+        "description": "division sign"
+    },
+    "right arrow": {
+        "prefix": "->",
+        "body": "→",
+        "description": "right arrow"
+    },
+    "left arrow": {
+        "prefix": "<-",
+        "body": "←",
+        "description": "left arrow"
+    },
+    "up arrow": {
+        "prefix": "^^",
+        "body": "↑",
+        "description": "up arrow"
+    },
+    "down arrow": {
+        "prefix": "vv",
+        "body": "↓",
+        "description": "down arrow"
+    },
+    "double right arrow": {
+        "prefix": "=>",
+        "body": "⇒",
+        "description": "double right arrow"
+    },
+    "double left arrow": {
+        "prefix": "<=",
+        "body": "⇐",
+        "description": "double left arrow"
+    }
+}
