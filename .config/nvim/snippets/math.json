@@ -463,5 +463,65 @@
         "prefix": "<=",
         "body": "⇐",
         "description": "double left arrow"
+    },
+    "Natural Numbers": {
+        "prefix": "NN",
+        "body": "ℕ",
+        "description": "Set of natural numbers"
+    },
+    "Integers": {
+        "prefix": "ZZ",
+        "body": "ℤ",
+        "description": "Set of integers"
+    },
+    "Rational Numbers": {
+        "prefix": "QQ",
+        "body": "ℚ",
+        "description": "Set of rational numbers"
+    },
+    "Real Numbers": {
+        "prefix": "RR",
+        "body": "ℝ",
+        "description": "Set of real numbers"
+    },
+    "Complex Numbers": {
+        "prefix": "CC",
+        "body": "ℂ",
+        "description": "Set of complex numbers"
+    } ,
+    "Logical AND": {
+        "prefix": "land",
+        "body": "∧",
+        "description": "Logical conjunction (AND)"
+    },
+    "Logical OR": {
+        "prefix": "lor",
+        "body": "∨",
+        "description": "Logical disjunction (OR)"
+    },
+    "Logical NOT": {
+        "prefix": "lnot",
+        "body": "¬",
+        "description": "Logical negation (NOT)"
+    },
+    "Implies": {
+        "prefix": "implies",
+        "body": "⇒",
+        "description": "Logical implication"
+    },
+    "If and only if": {
+        "prefix": "iff",
+        "body": "⇔",
+        "description": "Logical biconditional (If and only if)"
+    },
+    "Contradiction": {
+        "prefix": "bot",
+        "body": "⊥",
+        "description": "Contradiction (False)"
+    },
+    "Tautology": {
+        "prefix": "top",
+        "body": "⊤",
+        "description": "Tautology (True)"
     }
 }

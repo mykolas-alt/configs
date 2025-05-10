@@ -5,7 +5,8 @@
             {
                 "language": [
                     "python",
-                    "tex"
+                    "tex",
+                    "idris2"
                 ],
                 "path": "./math.json"
             }
