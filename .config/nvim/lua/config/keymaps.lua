@@ -2,6 +2,9 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 vim.keymap.set("i", "<C-G>", "<C-K>")
+vim.keymap.set("i", "<C-c>", "<Esc>")
+
+vim.keymap.set("x", "<leader>p", [["_dP]])
 
 local smart_splits = require("smart-splits")
 vim.keymap.set("n", "<C-h>", smart_splits.move_cursor_left)
