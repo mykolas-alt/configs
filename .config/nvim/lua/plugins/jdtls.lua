@@ -1,41 +1,42 @@
-return {
-  "mfussenegger/nvim-jdtls",
-  opts = function(_, opts)
-    local java_path = "/usr/lib/jvm/java-21-openjdk-amd64/bin/java"
-    local cmd = {
-      vim.fn.exepath("jdtls"),
-      "--java-executable=" .. java_path,
-      "--jvm-arg=-XX:+UseParallelGC",
-      "--jvm-arg=-Dlog.level=ALL",
-      "--jvm-arg=-Dlog.protocol=true",
-    }
-
-    -- Optionally preserve any existing logic (like lombok) from the original opts
-    if LazyVim.has("mason.nvim") then
-      local mason_registry = require("mason-registry")
-      local lombok_jar = mason_registry.get_package("jdtls"):get_install_path() .. "/lombok.jar"
-      table.insert(cmd, string.format("--jvm-arg=-javaagent:%s", lombok_jar))
-    end
-
-    opts.cmd = cmd
-    opts.settings = {
-      java = {
-        configuration = {
-          -- See https://github.com/eclipse/eclipse.jdt.ls/wiki/Running-the-JAVA-LS-server-from-the-command-line#initialize-request
-          -- And search for `interface RuntimeOption`
-          -- The `name` is NOT arbitrary, but must match one of the elements from `enum ExecutionEnvironment` in the link above
-          runtimes = {
-            {
-              name = "JavaSE-17",
-              path = "/usr/lib/jvm/java-17-openjdk-amd64/",
-            },
-          },
-        },
-      },
-    }
-
-    opts.dap_main = nil
-
-    return opts
-  end,
-}
+return {}
+-- return {
+--   "mfussenegger/nvim-jdtls",
+--   opts = function(_, opts)
+--     local java_path = "/usr/lib/jvm/java-21-openjdk-amd64/bin/java"
+--     local cmd = {
+--       vim.fn.exepath("jdtls"),
+--       "--java-executable=" .. java_path,
+--       "--jvm-arg=-XX:+UseParallelGC",
+--       "--jvm-arg=-Dlog.level=ALL",
+--       "--jvm-arg=-Dlog.protocol=true",
+--     }
+--
+--     -- Optionally preserve any existing logic (like lombok) from the original opts
+--     if LazyVim.has("mason.nvim") then
+--       local mason_registry = require("mason-registry")
+--       local lombok_jar = mason_registry.get_package("jdtls"):get_install_path() .. "/lombok.jar"
+--       table.insert(cmd, string.format("--jvm-arg=-javaagent:%s", lombok_jar))
+--     end
+--
+--     opts.cmd = cmd
+--     opts.settings = {
+--       java = {
+--         configuration = {
+--           -- See https://github.com/eclipse/eclipse.jdt.ls/wiki/Running-the-JAVA-LS-server-from-the-command-line#initialize-request
+--           -- And search for `interface RuntimeOption`
+--           -- The `name` is NOT arbitrary, but must match one of the elements from `enum ExecutionEnvironment` in the link above
+--           runtimes = {
+--             {
+--               name = "JavaSE-17",
+--               path = "/usr/lib/jvm/java-17-openjdk-amd64/",
+--             },
+--           },
+--         },
+--       },
+--     }
+--
+--     opts.dap_main = nil
+--
+--     return opts
+--   end,
+-- }
