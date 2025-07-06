@@ -51,9 +51,6 @@ end)
 -- For example, changing the color scheme:
 config.color_scheme = "Catppuccin Mocha"
 config.font = wezterm.font_with_fallback({ "Fragment Mono", "FiraCode Nerd Font" })
-config.colors = {
-	selection_bg = "rgba(80% 80% 80% 0.2)",
-}
 config.wsl_domains = {
 	{
 		-- The name of this specific domain.  Must be unique amonst all types
@@ -72,7 +69,6 @@ config.wsl_domains = {
 config.default_domain = "WSL:Ubuntu"
 
 config.hide_tab_bar_if_only_one_tab = true
-config.window_background_opacity = 0.8
 
 if not tmux_time then
 	config.leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 }

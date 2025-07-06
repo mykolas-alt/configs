@@ -140,4 +140,6 @@ elif [ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
 fi
 
 # Define the PS1
-export PS1="\[\e[2m\]\w \[\e[0;33m\]@\$(__git_ps1 '%s')\[\e[0m\] \[\e[1;36m\]>\[\e[0m\] "
+export PS1="\[\e[2m\]\w \[\e[0;33m\]@\$(__git_ps1 '%s')\[\e[0m\] \[\e[1;36m\]\n>\[\e[0m\] "
+
+# PROMPT_COMMAND='echo'
