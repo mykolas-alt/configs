@@ -142,12 +142,16 @@ fi
 # Define the PS1
 export PS1="\[\e[2m\]\w \[\e[0;33m\]@\$(__git_ps1 '%s')\[\e[0m\] \[\e[1;36m\]\n>\[\e[0m\] "
 
-source ~/.config/scripts/wttr.sh
+WTTR_PATH="~/.config/scripts/wttr.sh"
+if [ -f "$WTTR_PATH" ]; then
+    source ~/.config/scripts/wttr.sh
+fi
 
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 eval "$(zoxide init bash)"
-# Set up fzf key bindings and fuzzy completion
-eval "$(fzf --bash)"
 . "$HOME/.cargo/env"
 
 [ -f "/home/mykolas/.ghcup/env" ] && . "/home/mykolas/.ghcup/env" # ghcup-env
+
+# Set up fzf key bindings and fuzzy completion
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
