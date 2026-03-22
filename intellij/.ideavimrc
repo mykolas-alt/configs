@@ -32,7 +32,7 @@ nmap <Leader>q :action HideAllWindows<cr>
 " Leader maps
 " map <Leaderon iset rnu!<CR>
 map <Leader>m <Action>(ShowPopupMenu)
-map <Leader>fm <Action> (ReformatCode)
+map <Leader>fm <Action>(ReformatCode)
 map <Leader>o <Action>(OptimizoImports)
 map <Leader>l <Action>(OverrideMethods)
 map <Leader>i <Action>(ImplementMethods)
@@ -65,13 +65,13 @@ map <Leader>do <Action>(Stepout)
 map <Leader>dc <Action>(RunToCursor)
 
 "Running
-map <Leader>cd <Action> (DebugClass)
+map <Leader>cd <Action>(DebugClass)
 map <Leader>cr <Action>(RunClass)
 " Finding stuff
-map <Leader>fa <Action> (GotoAction)
+map <Leader>fa <Action>(GotoAction)
 map <Leader>fb <Action>(ShowBookmarks)
 map <Leader>fc <Actlon>(GotoClass)
-map <Leader>ff <Action> (GotoFile)
+map <Leader>ff <Action>(GotoFile)
 map <Leader>fo <Action>(RecentFiles)
 map <Leader>fw <Action>(FindInPath)
 map <Leader>ss <Action>(FileStructurePopup)
