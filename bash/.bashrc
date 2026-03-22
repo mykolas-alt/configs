@@ -96,6 +96,9 @@ alias ls='eza --icons --group-directories-first'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
+# intellij idea
+alias idea='~/idea/idea-IU-253.32098.37/bin/idea >~/idea/logs/idea.log 2>&1 &'
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -119,6 +122,9 @@ fi
 export PATH="$HOME/.pack/bin:$HOME/.idris2/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
+# jboss
+export WILDFLY_HOME="/opt/wildfly/"
+
 # fnm
 FNM_PATH="/home/mykolas/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
@@ -131,7 +137,9 @@ export COLORTERM=truecolor
 alias vi=nvim
 alias vim=nvim
 alias tree="eza --tree --icons"
+alias c=clear
 
+xset r rate 180 70
 # Load Git prompt script (if available)
 if [ -f /etc/bash_completion.d/git-prompt ]; then
     source /etc/bash_completion.d/git-prompt
@@ -141,6 +149,12 @@ fi
 
 # Define the PS1
 export PS1="\[\e[2m\]\w \[\e[0;33m\]@\$(__git_ps1 '%s')\[\e[0m\] \[\e[1;36m\]\n>\[\e[0m\] "
+
+export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64"
+export PATH=$JAVA_HOME/bin:$PATH
+
+export FZF_DEFAULT_OPTS="--layout=reverse --info=inline --border=rounded"
+export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 
 WTTR_PATH="~/.config/scripts/wttr.sh"
 if [ -f "$WTTR_PATH" ]; then
@@ -155,3 +169,9 @@ eval "$(zoxide init bash)"
 
 # Set up fzf key bindings and fuzzy completion
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+export HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "
+
+. "$HOME/.atuin/bin/env"
+
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+eval "$(atuin init bash --disable-up-arrow)"

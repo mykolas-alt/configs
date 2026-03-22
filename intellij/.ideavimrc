@@ -1,0 +1,170 @@
+let mapleader=" "
+" https://github.com/JetBrains/ideavlm/blob/master/doc/IdeaVlmX20Plugins.md
+Plug 'machakann/vim-highlightedyank' " Highlight copied text R with oase
+Plug 'tpope/vim-surround' "Delete/change/add parentheses/quotes/XML-tags/much more
+
+set mini-ai
+set functiontextobj
+set argtextobi
+" set textobj-indent
+set textobj-entire
+
+set scrolloff=5 "Minimal number of lines above and below the cursor
+set incsearch "Show where search pattern typed so far matches
+set visualbell "No bleep sound
+set which-key "Enable Which-Koy plugin
+set notimeout "Do not hide Which-Key popup
+" set hls "" Enable search highlighting
+set nohlsearch
+set ignorecase smartcase "Case-insensitive search
+set relativenumber
+set peekaboo
+set NERDTree
+set commentary
+
+" Nerdtree
+"nmap <Leader>e :action ActivateProjectToolwindow<CR>
+nmap <Leader>e :NERDTreeFocus<CR>
+nmap <Leader>p :NERDTreeFind<CR>
+" Hide open panels
+nmap <Leader>q :action HideAllWindows<cr>
+
+" Leader maps
+" map <Leaderon iset rnu!<CR>
+map <Leader>m <Action>(ShowPopupMenu)
+map <Leader>fm <Action> (ReformatCode)
+map <Leader>o <Action>(OptimizoImports)
+map <Leader>l <Action>(OverrideMethods)
+map <Leader>i <Action>(ImplementMethods)
+map <Leader>ds <Action>(ActivateProblemsViewToolWindow)
+map <Leader>de <Action>(ShowErrorDescription)
+map <Leader>a ggVG
+map <leader>y "*y
+noremap <Leader><Leader> :action SearchEverywhere<CR>
+nmap <Leader>bd :action CloseContent<CR>
+nmap <Leader>bo :action CloseAllEditorsButActive<CR>
+nmap H :action PreviousTab<CR>
+nmap L :action NextTab<CR>
+
+"Splits
+" map <Leader>sv <Action>(SplitVertically) " map <C-w>h :action SplitHorizontally<CR>
+map <C-w>h :action SplitHorizontally<CR>
+map <Leader>sm <Action>(MoveEditorToOppositeTabGroup)
+" Git
+map <Leader>gg <Action>(TUILauncher.lazygit)
+map <Leader>gf <Action>(Git.Fetch)
+map <Leader>gcm <Action>(CheckinProject)
+map <Leader>gb <Action>(Annotate)
+
+" Debugging
+map <Leader>db <Action>(ToggleLineBreakpoint)
+map <Leader>dr <Action>(Resume)
+map <Leader>dn <Action>(StepOver)
+map <Leader>di <Action>(StepInto)
+map <Leader>do <Action>(Stepout)
+map <Leader>dc <Action>(RunToCursor)
+
+"Running
+map <Leader>cd <Action> (DebugClass)
+map <Leader>cr <Action>(RunClass)
+" Finding stuff
+map <Leader>fa <Action> (GotoAction)
+map <Leader>fb <Action>(ShowBookmarks)
+map <Leader>fc <Actlon>(GotoClass)
+map <Leader>ff <Action> (GotoFile)
+map <Leader>fo <Action>(RecentFiles)
+map <Leader>fw <Action>(FindInPath)
+map <Leader>ss <Action>(FileStructurePopup)
+" Config file shortcuts
+map <Leader>src <Action>(IdeaVim.ReloadVimRc.reload)
+map <Leader>grc :e ~/.deavimrc<cR>
+" Sensible comment toggle
+" xmap <Leader>/ <Action>(CommontByLinoComment) <ESC><ESG> " nmap <Leader>/ <Action>(CommentByLineComment)k
+" Switch between splits
+map <C-h> <C-w>h
+map <C-l> <C-w>l
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+
+"HarpoonIJ (plugin required)
+map <Leader>hs <Action>(ShowHarpoon)
+map <Leader>ha <Action>(AddToHarpoon)
+map <Leader>h1 <Action>(SetHarpoon1)
+map <Leader>h2 <Action>(SetHarpoon2)
+map <Leader>h3 <Action>(SetHarpoon3)
+map <Leader>h4 <Action>(SetHarpoon4)
+map <Leader>h5 <Action>(SetHarpoon5)
+map <Leader>1 <Action>(GotoHarpoon1)
+map <Leader>2 <Action>(GotoHarpoon2)
+map <Leader>3 <Action>(GotoHarpoon3)
+map <Leader>4 <Action>(GotoHarpoon4)
+map <Leader>5 <Action>(GotoHarpoon5)
+
+"Clear search highlights
+nmap <ESC> :nohlsearch<CR>
+
+"General actions
+nmap U <C-r>
+map [[ <Action>(MethodUp)
+map ]] <Action>(MethodDown)
+" Folding
+map zf <Action>(ExpandCollapseToggleAction)
+map za <Action>(CollapseAllRegions)
+map zA <Action>(ExpandAllRegions)
+xmap zs <Action>(CollapseSolection)<ESC>
+
+" Refactoring
+nmap <Leader>rn <Action>(RenameElement)
+nmap <Leader>rf <Action>(RenameFile)
+nmap <Leader>rs <Action>(ChangeSignature)
+nmap <Leader>rm <Action>(Move)
+nmap <Leader>rc <Action>(CopyElement)
+
+"Bookmarks
+nmap m] <Action>(GotoNextBookmark)
+nmap m[ <Action>(GotoPreviousBookmark)
+
+"Go to
+map gu <Action>(ShowUsages)
+map gU <Action>(FindUsages)
+map gt <Action>(GotoTypeDeclaration)
+map gd <Action>(GotoDeclaration)
+map gD <Action>(GotoTypeDeclaration)
+map gi <Action>(GotoImplementation)
+map gs <Action>(GotoSuperMethod)
+map grT <Action>(GotoTest)
+map g] <Action>(VcsShowNextChangeMarker)
+map g[ <Action>(VcsShowPrevChangeMarker)
+map ]e <Action>(GotoNextError)
+map [e <Action>(GotoPreviousError)
+
+"Extract to local variable
+nmap <Leader>cxv <Action>(IntroduceVariable)
+vmap <Leader>cxv <Action>(IntroduceVariable)
+
+" Extract to method
+nmap <Leader>cxm <Action>(ExtractMethod)
+vmap <Leader>cxm <Action>(ExtractMethod)
+
+" Extract to constant
+nmap <Leader>cxc <Action>(IntroduceConstant)
+vmap <Leader>cxc <Action>(IntroduceConstant)
+
+" Evaluate selected 
+vmap <Leader>da <Action>(EvaluateExpression)
+
+
+" surround
+nmap gsa ys
+vmap gsa S
+nmap gsd ds
+nmap gsr cs
+
+" nmap h gh
+" nmap j gj
+" nmap k gk
+" nmap l gl
+"
+" Switch to English in normal mode (plugin required: IdeavimExtension)
+let keep_input_source_in_normal="com.apple.keylayout.ABC"
+set keep-english-in-normal
