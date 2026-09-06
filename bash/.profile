@@ -28,3 +28,4 @@ fi
 . "$HOME/.cargo/env"
 
 [ -f "/home/mykolas/.ghcup/env" ] && . "/home/mykolas/.ghcup/env" # ghcup-env
+. "$HOME/.atuin/bin/env"

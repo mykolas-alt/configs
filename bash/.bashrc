@@ -96,8 +96,7 @@ alias ls='eza --icons --group-directories-first'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-# intellij idea
-alias idea='~/idea/idea-IU-253.32098.37/bin/idea >~/idea/logs/idea.log 2>&1 &'
+alias idea='/opt/idea-IU/bin/idea > idea.log 2>&1 &'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -131,8 +130,10 @@ if [ -d "$FNM_PATH" ]; then
     export PATH="$FNM_PATH:$PATH"
     eval "$(fnm env)"
 fi
-export BROWSER="/mnt/c/WINDOWS/explorer.exe"
+export BROWSER="firefox"
+export EDITOR="nvim"
 alias gg=lazygit
+alias glg='git log --stat -p -G'
 export COLORTERM=truecolor
 alias vi=nvim
 alias vim=nvim
@@ -156,14 +157,25 @@ export PATH=$JAVA_HOME/bin:$PATH
 export FZF_DEFAULT_OPTS="--layout=reverse --info=inline --border=rounded"
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 
-WTTR_PATH="~/.config/scripts/wttr.sh"
+WTTR_PATH="/home/mykolas/.config/scripts/wttr.sh"
 if [ -f "$WTTR_PATH" ]; then
-    source ~/.config/scripts/wttr.sh
+    source /home/mykolas/.config/scripts/wttr.sh
 fi
 
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 eval "$(zoxide init bash)"
 . "$HOME/.cargo/env"
+
+# fnm
+FNM_PATH="/home/mykolas/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+    export PATH="$FNM_PATH:$PATH"
+    eval "$(fnm env --shell bash)"
+fi
+
+zmk() {
+    mkdir -p $1 && z $1
+}
 
 [ -f "/home/mykolas/.ghcup/env" ] && . "/home/mykolas/.ghcup/env" # ghcup-env
 

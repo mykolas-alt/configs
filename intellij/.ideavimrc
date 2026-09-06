@@ -2,6 +2,7 @@ let mapleader=" "
 " https://github.com/JetBrains/ideavlm/blob/master/doc/IdeaVlmX20Plugins.md
 Plug 'machakann/vim-highlightedyank' " Highlight copied text R with oase
 Plug 'tpope/vim-surround' "Delete/change/add parentheses/quotes/XML-tags/much more
+Plug 'justinmk/vim-sneak'
 
 set mini-ai
 set functiontextobj
@@ -9,7 +10,8 @@ set argtextobi
 " set textobj-indent
 set textobj-entire
 
-set scrolloff=5 "Minimal number of lines above and below the cursor
+let g:sneak#s_next = 1
+set scrolloff=10 "Minimal number of lines above and below the cursor
 set incsearch "Show where search pattern typed so far matches
 set visualbell "No bleep sound
 set which-key "Enable Which-Koy plugin
@@ -19,8 +21,39 @@ set nohlsearch
 set ignorecase smartcase "Case-insensitive search
 set relativenumber
 set peekaboo
+set ideajoin
 set NERDTree
 set commentary
+set matchit
+set clipboard+=unnamed
+set clipboard+=unnamedplus
+set clipboard+=ideaput
+
+noremap <leader>y "+y
+noremap <leader>Y "+Y
+noremap <leader>p "+p
+noremap <leader>P "+P
+
+map <C-o> <Action>(Back)
+map <C-i> <Action>(Forward)
+
+map <leader>sv <Action>(SplitVertically)
+map <leader>sh <Action>(SplitHorizontally)
+map <leader>sc <Action>(Unsplit)
+
+set dial
+nnoremap <C-a> :DialIncrement<cr>
+nnoremap <C-x> :DialDecrement<cr>
+
+nmap gh <Action>(Vcs.ShowTabbedFileHistory)
+nmap gl <Action>(LocalHistory.ShowHistory)
+nmap ]g <Action>(VcsShowNextChangeMarker)
+nmap [g <Action>(VcsShowPrevChangeMarker)
+
+map f <Plug>Sneak_f
+map F <Plug>Sneak_F
+map t <Plug>Sneak_t
+map T <Plug>Sneak_T
 
 " Nerdtree
 "nmap <Leader>e :action ActivateProjectToolwindow<CR>
@@ -43,9 +76,9 @@ map <leader>y "*y
 noremap <Leader><Leader> :action SearchEverywhere<CR>
 nmap <Leader>bd :action CloseContent<CR>
 nmap <Leader>bo :action CloseAllEditorsButActive<CR>
-nmap H :action PreviousTab<CR>
-nmap L :action NextTab<CR>
-
+nmap H <Action>(PreviousTab)
+nmap L <Action>(NextTab)
+map <Leader>sw <Action>(SurroundWith)
 "Splits
 " map <Leader>sv <Action>(SplitVertically) " map <C-w>h :action SplitHorizontally<CR>
 map <C-w>h :action SplitHorizontally<CR>
@@ -150,8 +183,9 @@ vmap <Leader>cxm <Action>(ExtractMethod)
 nmap <Leader>cxc <Action>(IntroduceConstant)
 vmap <Leader>cxc <Action>(IntroduceConstant)
 
-" Evaluate selected 
-vmap <Leader>da <Action>(EvaluateExpression)
+" Evaluate selected
+vmap <Leader>dA <Action>(EvaluateExpression)
+vmap <Leader>da <Action>(QuickEvaluateExpression)
 
 
 " surround
